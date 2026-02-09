@@ -1,0 +1,235 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: "Poppins";
+}
+html{
+    scroll-behavior: smooth;
+}
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+
+        
+        .hero {
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: white;
+            padding: 100px 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(); }
+        }
+        .section {
+            padding: 60px 0;
+            animation: slideIn 1.5s ease-out;
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(); }
+        }
+        .card:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+        .gallery img {
+            transition: transform 1s ease;
+            border-radius: 20px;
+        }
+        .gallery img:hover {
+            transform: rotate(4deg) scale(1.1);
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+ /* about img  */
+ #about{
+    background-image: linear-gradient(to top , rgba(41, 34, 34, 0.718), rgba(41, 34, 34, 0.718), rgba(0, 0, 0, 0.718)),url(https://png.pngtree.com/background/20231031/original/pngtree-3d-rendered-cartoon-fast-food-for-a-restaurant-picture-image_5819770.jpg);
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+ #about h2{
+    text-align: center;
+ }
+ p.text-center {
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.text-center{
+    margin-bottom: 30px;
+    /* font-weight: 600; */
+}
+
+.cardll .card {
+    /* background: transparent; */
+    color: white;
+    background-color: rgba(0, 0, 0, 0.374);
+    /* opacity: 0.6; */
+}
+a.btn.btn-warning {
+    color:black;
+}
+
+/* fghjkl */
+
+.midtext
+ {
+    text-align: center;
+}
+
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
+    padding: 20px;
+}
+
+a.nav-link {
+    margin-right: 30px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+ #home{
+    background-image: linear-gradient(to right , rgba(21, 16, 16, 0.464), rgba(11, 11, 11, 0.41), rgba(15, 14, 14, 0.284)), url(https://png.pngtree.com/thumb_back/fh260/background/20230706/pngtree-d-rendered-cartoon-fast-food-deliciously-tempting-treats-at-a-restaurant-image_3804314.jpg);
+    height: 80vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+ #menu{
+    background-image:linear-gradient(to right , rgba(26, 21, 21, 0.718), rgba(26, 21, 21, 0.574), rgba(26, 21, 21, 0.481), rgba(222, 212, 212, 0)),url(https://img.freepik.com/free-psd/tasty-fast-food-render-mockup_23-2149108447.jpg?semt=ais_hybrid&w=740&q=80);
+    color:white;
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+ }
+ .cardmain{
+    height: 800px;
+ }
+
+
+/* media  tab*/ 
+
+
+
+/* meda small lepy  */
+@media (max-width: 992px) {
+
+    /* Navbar button */
+    .login {
+        margin-top: 10px;
+    }
+
+    /* About cards center align */
+    #about .row {
+        justify-content: center;
+    }
+    #about{
+        height: auto;
+        padding: 80px 20px;
+        text-align: center;
+    }
+
+    /* Gallery images smoother */
+    .gallery img {
+        border-radius: 15px;
+    }
+}
+/* media for tablate */
+@media (max-width: 768px) {
+
+    /* Hero text */
+    .midtext h1 {
+        font-size: 36px;
+    }
+
+    .midtext p {
+        font-size: 18px;
+    }
+
+    /* Section padding */
+    .section {
+        padding: 40px 20px;
+    }
+ #about{
+    background-color: aqua;
+ }
+    /* Cards spacing */
+    .card {
+        margin-bottom: 20px;
+    }
+
+    /* Menu background fix */
+    #menu {
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+
+
+/* mobile screen  */
+@media (max-width: 576px) {
+
+    /* Navbar */
+    nav.navbar {
+        padding: 10px;
+    }
+
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    /* Home / Hero section */
+    #home {
+        height: auto;
+        padding: 80px 20px;
+        text-align: center;
+    }
+
+    .midtext h1 {
+        font-size: 28px;
+    }
+
+    .midtext p {
+        font-size: 16px;
+    }
+
+    /* Cards */
+    .card {
+        margin: 15px auto;
+        width: 100% !important;
+    }
+
+    .card-body {
+        text-align: center;
+    }
+
+    /* About section text */
+    p.text-center {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    /* Gallery images */
+    .gallery img {
+        margin-bottom: 15px;
+    }
+
+    /* Remove fixed height */
+    .cardmain {
+        height: auto;
+    }
+}
+
+
+
